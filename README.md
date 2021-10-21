@@ -28,6 +28,16 @@ use the graphiql-editor opening in the preview-window or by running
 
 after your local blockchain and dfuse-instance started, to create subscriptions to listen to events happening on your local blockchain. 
 
+set the subscription-data to
+ 
+    {
+	  "query": "account:eosio",
+	  "cursor": "",
+	  "limit": 10
+	}
+	
+to listen to new blocks.
+
 Subscribe to the graphiql-endpoints hosted by your gitpod-environment with your frontend
 
 For more information on dfuse follow https://docs.dfuse.eosnation.io/

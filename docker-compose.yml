@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  mindreader:
+    image: mindreader:latest
+    networks:
+     - "dfuse"
+    depends_on:
+     - "producer"
+#    command: ["./wait-for-it.sh", "producer:9876", "--", "dfuseeos", "start"]
+  producer:
+    image: producer:latest
+    networks:
+     - "dfuse"
+
+networks:
+  dfuse:

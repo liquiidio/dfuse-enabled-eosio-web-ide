@@ -1,0 +1,15 @@
+image:
+  file: Dockerfile
+
+tasks:
+  - name: permissions on scripts
+    before: chmod 777 /workspace/dfuse-enabled-eosio-web-ide/redeploy.sh && chmod 777 /workspace/dfuse-enabled-eosio-web-ide/test.sh && chmod 777 /workspace/dfuse-enabled-eosio-web-ide/build.sh
+  - name: open readme
+  - command: open README.md
+
+ports:
+  - port: 8080
+    onOpen: notify
+    visibility: public
+  - port: 0000-9999
+    onOpen: ignore

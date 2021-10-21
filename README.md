@@ -33,7 +33,6 @@ set the subscription-data to
     {
 	  "query": "account:eosio",
 	  "cursor": "",
-	  "limit": 10
 	}
 	
 to listen to new blocks.
